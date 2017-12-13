@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.Hashtable;
+import java.util.Scanner;
+
+
+public class CS_3345_HW03 {
+
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+
+        Hashtable<String, Integer> hash = new Hashtable<String, Integer>();
+        Scanner input = new Scanner("dictionaryTest.txt");
+        String line = "";
+        
+        int i = 0;
+        while (line != null){
+            line = input.nextLine();
+            hash.put(line, i);
+            i++;
+        }
+        for ( int j = 0 ; j < hash.size() ; j++){
+            System.out.println(hash.get(j));
+
+    }
+
+} }
